@@ -1,0 +1,94 @@
+/* BASE */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75; /* interligne calculer en divisant taille police par taille interligne du texte dans la maquette fichier psd */
+
+  color: #737373;
+}
+::selection {
+  color: #fff;
+  background-color: #ff9100;
+}
+
+a {
+  color: inherit; /* couleur héritée de body */
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-left: 10px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  margin: 0px 10px 20px 10px;
+}
+
+
+
+cb {
+  float: none;
+}
+
+/* HEADER */
+header {
+    padding: 70px 0 165px 0;
+    text-align: center;
+    color: #FFF;
+    background: url(img/header.jpg) center top fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.header-container {
+  width: 1170px;
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+  overflow: hidden;
+
+.header-logo {
+  display: block;
+  float: left;
+  padding-top: 0px;
+  margin-top: 0px;
+  background-color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 1.4em;
+  font-weight: 400;
+  background-color: #ff9100;
+  margin-top: 0px;
+  height: 80px;
+}
+
+nav ul li a {
+  padding: 0 37px;
+  color: #fff;
+}
+
+nav ul li a:hover a:active {
+  color: #ff9100;
+  background-color: #fff;
+}
+
+.header-baseline {
+  display: block;
+}
