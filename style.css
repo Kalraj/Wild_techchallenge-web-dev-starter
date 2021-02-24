@@ -110,11 +110,12 @@ a:active {
 /*----------------------------------------------------------------------------*\
     ABOUT
 \*----------------------------------------------------------------------------*/
-
 .banner {
   height: 700px;
   width: 100%;
   padding-top: 100px;
+  background-image: url(img/ship.jpg);
+  background-size: cover;
 
   background-color: rgb(34, 30, 43);
 }
@@ -122,8 +123,6 @@ a:active {
 .banner-content {
   height: 700px;
   width: 100%;
-  background-image: url(img/ship.jpg);
-  background-size: cover;
 }
 
 .banner-content h1 {
