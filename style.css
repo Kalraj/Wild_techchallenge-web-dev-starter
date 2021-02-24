@@ -57,7 +57,7 @@ p {
   height: 100px;
   display: flex;
   /* regles concernant le reste : background, border... */
-  background-color: rgb(247, 54, 54);
+  background-color: #fff;
 }
 
 .logo {
@@ -70,10 +70,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   margin: auto;
-  position: relative;
   width: 100%;
-
-  background-color: #fff;
 }
 
 nav ul {
@@ -81,22 +78,31 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-
-  background-color: rgb(231, 89, 172);
 }
 
 nav li {
   /* regles concernant les Blocs */
-  display: flex;
-  justify-content: space-around;
   /* regles concernant le texte */
-  font-weight: 100;
+  margin: 0;
+  font-weight: 200;
   letter-spacing: 2px;
   list-style: none;
-  padding: 20px;
   border: 1px solid white;
 
   background-color: rgb(231, 211, 31);
+}
+
+nav li a {
+  color: white;
+  background-color: orange;
+  border: 1px solid;
+  padding: 20px; /* 20px autout du texte du bouton */
+}
+
+nav li a:hover,
+a:active {
+  color: orange;
+  background-color: #fff;
 }
 
 /*----------------------------------------------------------------------------*\
