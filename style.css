@@ -79,12 +79,8 @@ a.logo,
 a.logo:active {
   display: block;
   margin-top: 20px;
-  background-color: transparent;
-}
 
-.header-container {
-  width: 100%;
-  display: flex;
+  background-color: transparent;
 }
 
 nav {
