@@ -11,6 +11,7 @@ body {
   padding: 0;
 
   font-size: 1em;
+  font-weight: 100;
   font-family: "Open Sans", sans-serif;
   line-height: 1.75; /* interligne calculer en divisant taille police par taille interligne du texte dans la maquette fichier psd */
   color: #737373;
@@ -24,34 +25,39 @@ a {
 h2 {
   margin-left: 20px;
   padding-left: 10px;
-  border-left: 5px solid orange;
+
   font-weight: 700;
+
+  border-left: 5px solid orange;
 }
 
 p {
-  margin: 0 20px 20px 20px;
   width: 100%;
+  margin: 0 20px 20px 20px;
 }
 
 /* couleur de selection texte*/
 ::selection {
   color: #fff;
-  background: #f39c12;
   text-shadow: none;
+
+  background: #f39c12;
 }
 
 /* firefox */
 ::-moz-selection {
   color: #fff;
-  background: #f39c12;
   text-shadow: none;
+
+  background: #f39c12;
 }
 
 /* explorer */
 ::-webkit-selection {
   color: #fff;
-  background: #f39c12;
   text-shadow: none;
+
+  background: #f39c12;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -70,11 +76,11 @@ p {
   width: 100%;
   height: 200px;
   display: flex;
+  position: fixed;
+  z-index: 5;
 
   background-color: #fff;
   box-shadow: #737373;
-  position: fixed;
-  z-index: 5;
 }
 
 .logo {
@@ -102,6 +108,7 @@ nav li {
   font-weight: 200;
   letter-spacing: 2px;
   list-style: none;
+
   border: 1px solid white;
 }
 
@@ -113,6 +120,7 @@ nav li a {
   -o-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+
   background-color: orange;
   border: 1px solid;
 }
@@ -120,6 +128,7 @@ nav li a {
 nav li a:hover,
 a:active {
   color: orange;
+
   background-color: rgb(255, 255, 255);
 }
 
@@ -130,10 +139,9 @@ a:active {
   height: 700px;
   width: 100%;
   padding-top: 200px;
+
   background-image: url(img/banner.jpg);
   background-size: cover;
-
-  background-color: rgb(34, 30, 43);
 }
 
 .banner h1 {
@@ -167,6 +175,7 @@ h1 {
 .picture {
   width: 100%;
   height: 100%;
+
   background-color: rgb(158, 31, 31);
   border: rgb(209, 173, 14);
 }
@@ -207,26 +216,35 @@ h3 {
 }
 
 table {
-  background-color: white;
   width: 80%;
   margin: auto;
+
   color: white;
+
+  background-color: white;
 }
 
 thead tr {
-  background-color: rgb(187, 100, 19);
   font-weight: 100;
   letter-spacing: 2px;
+
+  background-color: rgb(187, 100, 19);
 }
 
 tr {
-  text-align: center;
   height: 50px;
+
+  text-align: center;
+
   background-color: orange;
 }
 
 tr.stripe {
   background-color: rgb(243, 133, 7);
+}
+
+tr.head:hover {
+  background-color: #355d64;
 }
 
 tr:hover {
@@ -239,29 +257,43 @@ tr:hover {
   width: 100%;
   height: 700px;
   padding-top: 200px;
+
   background-color: white;
+}
+
+#contact h2 {
+  font-family: "Open Sans", sans-serif;
 }
 
 #contactForm {
   margin: 50px 50px 50px 50px;
+
   color: orange;
 }
 
+.form-input {
+  height: 20px;
+}
+
+.form-textarea {
+  font-family: "Open Sans", sans-serif;
+}
 .form-input,
 .form-textarea {
-  display: block;
   width: 95%;
-  height: 45px;
+  display: block;
   padding: 15px;
+
+  font-size: 15px;
+  line-height: 1.75;
+  color: #737373;
+
   background: #c0dee4;
   border: 2px solid #d9d9d9;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  font-size: 15px;
-  line-height: 1.75;
-  color: #737373;
   outline: none;
 }
 
@@ -277,6 +309,7 @@ tr:hover {
 .submit-btn {
   display: inline-block;
   padding: 0 40px;
+
   font-size: 15px;
   color: #737373;
   font-weight: 700;
