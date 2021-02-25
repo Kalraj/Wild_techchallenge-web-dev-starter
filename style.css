@@ -22,9 +22,10 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  margin-left: 20px;
+h2.all {
   padding-left: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 
   font-weight: 700;
 
@@ -33,7 +34,8 @@ h2 {
 
 p {
   width: 100%;
-  margin: 0 20px 20px 20px;
+  margin: 0 20px 20px 0px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* couleur de selection texte*/
@@ -63,33 +65,19 @@ p {
 /*----------------------------------------------------------------------------*\
     Layout
 \*----------------------------------------------------------------------------*/
-#page-container {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto; /* centralise sur la page par rapport a la width*/
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3em 1.5em;
 }
 
 /*----------------------------------------------------------------------------*\
     HEARDER
 \*----------------------------------------------------------------------------*/
-.header-container {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  position: fixed;
-  z-index: 5;
 
-  background-color: #fff;
-  box-shadow: #737373;
-}
-
-.logo {
+a.logo {
   display: block;
   margin: auto;
-  padding-left: 50px;
-}
-
-.logo a {
   background-color: transparent;
 }
 
@@ -142,7 +130,7 @@ a:active {
 .banner {
   height: 700px;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 100px;
 
   background-image: url(img/banner.jpg);
   background-size: cover;
@@ -172,8 +160,7 @@ h1 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Si nous voulions que nos flex-items soient répartis de manière égale en remplissant l'espace du container horizontalement, nous pourrions alors utiliser le justify-content et space-between ou space-around: */
-  margin-top: 50px;
+  justify-content: space-between; /* Si nous voulions que nos flex-items soient répartis de manière égale en remplissant l'espace du container horizontalement, nous pourrions alors utiliser le justify-content et space-between ou space-around: */
 }
 
 .picture {
@@ -193,7 +180,7 @@ h1 {
 #gallery {
   height: 700px;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 #royal-family {
   height: 700px;
@@ -212,15 +199,11 @@ h3 {
 #assets {
   width: 100%;
   height: 700px;
-  padding-top: 200px;
-}
-
-#assets h2 {
-  margin-bottom: 50px;
+  padding-top: 100px;
 }
 
 table {
-  width: 80%;
+  width: 100%;
   margin: auto;
 
   color: white;
@@ -260,7 +243,7 @@ tr:hover {
 #contact {
   width: 100%;
   height: 700px;
-  padding-top: 200px;
+  padding-top: 100px;
 
   background-color: white;
 }
@@ -270,7 +253,7 @@ tr:hover {
 }
 
 #contactForm {
-  margin: 50px 50px 50px 50px;
+  margin: 50px 0px 50px 0px;
 
   color: orange;
 }
@@ -284,7 +267,7 @@ tr:hover {
 }
 .form-input,
 .form-textarea {
-  width: 95%;
+  width: 97%;
   display: block;
   padding: 15px;
 
