@@ -78,7 +78,7 @@ p {
 a.logo,
 a.logo:active {
   display: block;
-  margin: auto;
+  margin-top: 20px;
   background-color: transparent;
 }
 
@@ -87,11 +87,6 @@ a.logo:active {
   display: flex;
 }
 
-.header-logo {
-  display: block;
-  float: left;
-  padding-top: 80px;
-}
 nav {
   width: 100%;
   display: flex;
@@ -141,7 +136,7 @@ a:active {
 .banner {
   height: 700px;
   width: 100%;
-  padding-top: 100px;
+  margin-top: 80px;
 
   background-image: url(img/banner.jpg);
   background-size: cover;
