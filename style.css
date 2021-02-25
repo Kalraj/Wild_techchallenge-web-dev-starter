@@ -145,7 +145,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; /* Si nous voulions que nos flex-items soient répartis de manière égale en remplissant l'espace du container horizontalement, nous pourrions alors utiliser le justify-content et space-between ou space-around: */
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 #gallery {
@@ -170,11 +170,42 @@ h3 {
 #assets {
   width: 100%;
   height: 700px;
+  padding-top: 100px;
+  background-color: rgb(94, 36, 36);
 }
 
+#assets h2 {
+  margin-bottom: 50px;
+}
+
+table {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+thead tr {
+  background-color: rgb(187, 100, 19);
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+tr {
+  text-align: center;
+  height: 50px;
+  background-color: orange;
+}
+
+tr.stripe {
+  background-color: rgb(243, 133, 7);
+}
 /*----------------------------------------------------------------------------*\
     CONTACT FORM
 \*----------------------------------------------------------------------------*/
-/* regles concernant les Blocs */
-/* regles concernant le texte */
-/* regles concernant le reste : background, border... */
+#contact {
+  width: 100%;
+  height: 700px;
+  padding-top: 100px;
+  background-color: rgb(63, 194, 63);
+}
