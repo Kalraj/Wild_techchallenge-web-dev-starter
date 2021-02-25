@@ -75,7 +75,8 @@ p {
     HEARDER
 \*----------------------------------------------------------------------------*/
 
-a.logo {
+a.logo,
+a.logo:active {
   display: block;
   margin: auto;
   background-color: transparent;
