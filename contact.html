@@ -40,16 +40,31 @@
       <!-- Add this to a seperate page, e.g. contact.html
     <!-- Contact the Royal Kingdom -->
       <section id="contact">
-        <p>
+        <h2>
           Fill in the form below to contact the Royal Kingdom
-        </p>
+        </h2>
         <form id="contactForm">
-          <label for="firstname">First name: </label>
-          <input type="text" id="firstname" name="fname" value="John" /><br />
-          <label for="email">email: </label>
-          <input type="email" id="email" name="emailAdress" /><br />
-          <textarea id="message">Message:</textarea><br />
-          <input type="submit" value="submit" />
+          <input
+            type="text"
+            name="fname"
+            placeholder="Your first name"
+            class="form-input"
+          /><br />
+
+          <input
+            type="email"
+            name="emailAdress"
+            placeholder="Your email"
+            class="form-input"
+          /><br />
+
+          <textarea
+            id="message"
+            class="form-textarea"
+            placeholder="Your message"
+          ></textarea
+          ><br />
+          <input type="submit" value="submit" class="submit-btn" />
         </form>
       </section>
     </div>
